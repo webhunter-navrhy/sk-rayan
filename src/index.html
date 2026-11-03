@@ -1,0 +1,84 @@
+{% extends "_base.html" %}
+{% set titulek = 'Montážne plošiny vo výškach – RAYAN, Tekovská Breznica' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="stitok">Rodinná firma od roku 2008</p>
+      <h1>Montážne plošiny vo výškach</h1>
+      <p class="uvod">Práca vo výške s dôrazom na kvalitu, bezpečnosť a precíznosť. Dosah až 16&nbsp;m, cena za hodinu práce jasne uvedená vopred.</p>
+      <p class="akcie"><a class="tl" href="#kontakt">Napísať dopyt</a><a class="tl tl-druhe" href="#cennik">Cenník</a></p>
+    </div>
+    <div class="hero-foto">
+      <div class="kota" aria-hidden="true"><span>16&nbsp;m</span></div>
+      {{ img('iveco.jpg', 'Montážna plošina IVECO MP16 na nákladnom vozidle', sizes='(min-width: 60rem) 40rem, 100vw') }}
+    </div>
+  </div>
+</section>
+
+<section class="sekce" id="plosiny">
+  <div class="wrap">
+    <h2>Naše plošiny</h2>
+    <div class="vozidla">
+      {% for p in data.plosiny %}
+      <article class="vozidlo" id="{{ p.id }}">
+        <div class="vozidlo-foto">{{ img(p.foto, p.alt, sizes='(min-width: 60rem) 34rem, 100vw') }}</div>
+        <div class="vozidlo-text">
+          <h3>{{ p.nazev }}</h3>
+          <dl class="param">
+            <div><dt>Max. dosah</dt><dd>{{ p.dosah }}&nbsp;m</dd></div>
+            <div><dt>Max. bočný dosah</dt><dd>{{ p.bocny }}&nbsp;m</dd></div>
+            <div><dt>Nosnosť</dt><dd>{{ p.nosnost }}&nbsp;kg</dd></div>
+          </dl>
+          <p>{{ p.poznamka }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sekce sekce-sedá" id="cennik">
+  <div class="wrap">
+    <h2>Cenník</h2>
+    <table class="cennik">
+      <thead><tr><th scope="col">Plošina</th><th scope="col">Hodina práce</th><th scope="col">Preprava plošiny</th></tr></thead>
+      <tbody>
+        {% for p in data.plosiny %}<tr><th scope="row">{{ p.nazev }}</th><td>{{ p.hodina }}&nbsp;€</td><td>{{ p.preprava }}&nbsp;€ / km</td></tr>{% endfor %}
+      </tbody>
+    </table>
+    <p class="drobne">Ceny podľa aktuálneho cenníka firmy.</p>
+  </div>
+</section>
+
+<section class="sekce" id="o-nas">
+  <div class="wrap uzky">
+    <h2>O našej spoločnosti</h2>
+    <p>RAYAN s.r.o. je rodinná firma, ktorá funguje od roku 2008. Špecializujeme sa na prácu s montážnymi plošinami vo výškach a zaručujeme kvalitu, bezpečnosť a precíznosť.</p>
+    <p>Neváhajte nás kontaktovať.</p>
+  </div>
+</section>
+
+<section class="sekce sekce-sedá" id="hostinec">
+  <div class="wrap uzky">
+    <h2>Hostinec pod Bránou</h2>
+    <p>Súčasťou našej firmy je aj Hostinec pod Bránou. Nachádza sa v malebnej obci Hronský Beňadik, známej vďaka najstaršiemu kláštoru na Slovensku.</p>
+  </div>
+</section>
+
+<section class="sekce" id="kontakt">
+  <div class="wrap kontakt-grid">
+    <div>
+      <h2>Kontakt</h2>
+      <address>
+        <p><strong>RAYAN s.r.o.</strong><br>Tekovská Breznica 497<br>966 52 Žarnovica</p>
+        <p><a href="tel:+421905394059">+421 905 394 059</a><br><a href="tel:+421905663537">+421 905 663 537</a></p>
+        <p><a href="mailto:info@durovsky.sk">info@durovsky.sk</a></p>
+        <p class="drobne">IČO 44378084 · DIČ 2022684114</p>
+      </address>
+    </div>
+    <div>{% include "_formular.html" %}</div>
+  </div>
+</section>
+{% endblock %}

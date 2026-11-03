@@ -1,0 +1,55 @@
+{
+  "slug": "sk-rayan",
+  "nazev": "RAYAN s.r.o.",
+  "url": "https://webhunter-navrhy.github.io/sk-rayan/",
+  "base": "/sk-rayan/",
+  "lang": "sk",
+  "popis": "RAYAN s.r.o. z Tekovskej Breznice: práca s montážnymi plošinami vo výškach. Rodinná firma od roku 2008, plošiny IVECO MP16 a AVIA A31T 4x4.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "iveco.jpg",
+  "logo": "logo.png",
+  "theme_color": "#f4511e",
+  "typ": "LocalBusiness",
+  "ico": "44378084",
+  "kontakt": {
+    "email": "info@durovsky.sk",
+    "telefon": "+421 905 394 059",
+    "adresa": {
+      "ulice": "Tekovská Breznica 497",
+      "psc": "966 52",
+      "mesto": "Žarnovica",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Dopyt z webu RAYAN"
+  },
+  "nav": [
+    {
+      "text": "Plošiny",
+      "href": "#plosiny"
+    },
+    {
+      "text": "Cenník",
+      "href": "#cennik"
+    },
+    {
+      "text": "O nás",
+      "href": "#o-nas"
+    },
+    {
+      "text": "Hostinec",
+      "href": "#hostinec"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}

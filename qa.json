@@ -1,0 +1,70 @@
+{
+  "url": "http://localhost:8765/sk-rayan/",
+  "ok": true,
+  "chyby": [],
+  "varovani": [
+    "Web má noindex (u ostrého webu pravděpodobně chyba)",
+    "Dotykové cíle <40 px na mobilu: 1× (např. a \"info@durovsky.sk\" 147×23)"
+  ],
+  "metriky": {
+    "sirky": {
+      "1440": {
+        "scrollWidth": 1440,
+        "pocet_pretekajicich": 0
+      },
+      "1280": {
+        "scrollWidth": 1280,
+        "pocet_pretekajicich": 0
+      },
+      "1024": {
+        "scrollWidth": 1024,
+        "pocet_pretekajicich": 0
+      },
+      "820": {
+        "scrollWidth": 820,
+        "pocet_pretekajicich": 0
+      },
+      "390": {
+        "scrollWidth": 390,
+        "pocet_pretekajicich": 0
+      },
+      "360": {
+        "scrollWidth": 360,
+        "pocet_pretekajicich": 0
+      }
+    },
+    "preneseno_PC_MB": 0.19,
+    "nejvetsi_obrazek_PC": {
+      "kB": 37,
+      "url": "http://localhost:8765/sk-rayan/logo.png"
+    },
+    "snimku_PC": 5,
+    "preneseno_mobil_MB": 0.27,
+    "nejvetsi_obrazek_mobil": {
+      "kB": 71,
+      "url": "http://localhost:8765/sk-rayan/img/iveco-1280.webp"
+    },
+    "snimku_mobil": 5,
+    "seo": {
+      "title": "Montážne plošiny vo výškach – RAYAN, Tekovská Breznica",
+      "description": "RAYAN s.r.o. z Tekovskej Breznice: práca s montážnymi plošinami vo výškach. Rodinná firma od roku 20",
+      "lang": "sk",
+      "h1": 1,
+      "jsonld": [
+        true
+      ],
+      "robots": "noindex, nofollow",
+      "og_image": "https://webhunter-navrhy.github.io/sk-rayan/og.jpg",
+      "bez_v": [],
+      "canonical": true,
+      "viewport": true
+    },
+    "maly_dotykovy_cil": 1,
+    "font_nadpis": "Barlow Condensed",
+    "font_text": "Barlow",
+    "podstranky": {
+      "stranek": 1,
+      "obrazku": 7
+    }
+  }
+}

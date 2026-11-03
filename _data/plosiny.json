@@ -1,0 +1,26 @@
+[
+  {
+    "id": "iveco",
+    "nazev": "IVECO MP16",
+    "foto": "iveco.jpg",
+    "alt": "Montážna plošina IVECO MP16 na nákladnom vozidle",
+    "dosah": 16,
+    "bocny": 8,
+    "nosnost": 250,
+    "hodina": 20,
+    "preprava": 1,
+    "poznamka": "Možnosť prevádzky na elektrický pohon."
+  },
+  {
+    "id": "avia",
+    "nazev": "AVIA A31T 4x4",
+    "foto": "avia.jpg",
+    "alt": "Montážna plošina AVIA A31T 4x4 s vysunutým ramenom",
+    "dosah": 14,
+    "bocny": 7,
+    "nosnost": 220,
+    "hodina": 25,
+    "preprava": 1,
+    "poznamka": "Možnosť prác v ťažkom teréne."
+  }
+]
